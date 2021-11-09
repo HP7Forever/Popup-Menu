@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Popup Login Form Using HTML & CSS
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="p" id="p1">
+            <div class="ntp">
+                <div class="bt-close" onclick="togglePopup()">X</div>
+                <h1>Sign In</h1>
+                <div class="atp">
+                    <input placeholder="Email" class="rtp"><br>
+                    <input placeholder="Password" type="password" class="rtp">
+                </div>
+                <button class="b2">Sign In</button>
+                <p>Don't have an account? <br><a href="/signup.html">Sign Up</a></p>
+            </div>
+        </div>
+        <button onclick="togglePopup()" class="b1">Sign In</button>
+        
+        <script>
+            function togglePopup() {
+                document.getElementById("p1").classList.toggle("active")
+            }
+        </script>
+    </body>
+</html>
